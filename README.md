@@ -31,3 +31,5 @@ Contar con las herramientas para iniciar el proceso de creación, subir y correr
 4.Creación de repositorio
 
 5.Configuración de llaves SSH
+
+***Tener en cuenta: Se creó la rama sh-admin donde encontrarás la documentación para este apartado.***

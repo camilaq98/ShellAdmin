@@ -15,3 +15,5 @@ Crear un script Shell con un menú que me permita:
 6.Editar DNS Server
 
 7.Configurar proxy
+
+***Tener en cuenta: Se creó la rama sh-admin donde encontrarás la documentación de este menú***

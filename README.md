@@ -1,5 +1,5 @@
 ***<h1 align="center">TALLER 2 SISTEMAS OPERATIVOS</h1>***
----
+
 ***EXPLICACIÓN DE LA SHELL DE ADMINISTRACIÓN*** 
 
 ![menu](imagesMenu/menu.png)

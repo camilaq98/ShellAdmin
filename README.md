@@ -61,7 +61,7 @@ En amarillo esta subrayado el nombre del repositorio y la rama que se creó dent
 Para la generación de la llave se debe ejecutar el comando ssh-keygen en el servidor que estes trabajando, en este caso como la llave ya se habia creado nos dice que si queremos sobreescribir el archivo o dejamos la que ya se había generado. Por tanto decimos que no sobreescriba y la ejecución del comando se verá de la siguiente manera:
 
 <p align="center">
-  <img src="imagesTaller1Docker/creaciónLlave.png" width="500" height="250" title="Creación de la llave">
+  <img src="imagesTaller1Docker/creacionLlave.png" width="500" height="250" title="Creación de la llave">
 </p> 
 
 Al dirigirnos a la ruta que nos aparece de la generación de la llave en la imagen anterior podremos observar la llave en el archivo como se muestra a continuación. Esta la debemos copiar para luego añadirla en los próximos pasos del GitHub.

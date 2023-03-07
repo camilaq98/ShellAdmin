@@ -37,3 +37,23 @@ Llenas todos los campos y a continuación estarás dentro de tu cuenta. La venta
 </p>  
 
 ***CREACIÓN DEL REPOSITORIO***
+
+<p align="center">
+  <img src="imagesTaller1Docker/crearRepo.png" width="500" height="250" title="Página principal para la creación del repositorio">
+</p> 
+
+Primero se debe dar click donde está señalado el #1 para que le aparezca la pantalla como se muestra en la imagen, al darle click en new que es el paso #2 te dirigirá a la siguiente ventana:
+
+<p align="center">
+  <img src="imagesTaller1Docker/camposNuevoRepo.png" width="450" height="250" title="Página principal para la creación del repositorio">
+</p> 
+
+Diligencias el nombre que le quieres poner al repositorio, si lo deseas público o no y si deseas añadirle el archivo README. Al tener todos los pasos anteriores tu repositorio ha sido creado y te aparecerá la ventana de la siguiente manera:
+
+<p align="center">
+  <img src="imagesTaller1Docker/repoCreado.png" width="500" height="250" title="Página principal para la creación del repositorio">
+</p> 
+
+En amarillo esta subrayado el nombre del repositorio y la rama que se creó dentro del mismo.
+
+***CONFIGURACIÓN DE LLAVES SSH***

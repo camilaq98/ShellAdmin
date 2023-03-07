@@ -99,3 +99,126 @@ Para la clonación del repositorio ejecutariamos el comando git clone URL-SSH. E
 <p align="center">
   <img src="imagesTaller1Docker/clonacionRepo.png" width="500" height="250" title="Clonar un repositorio">
 </p> 
+
+***<h1 align="center">TALLER 2 DOCKER</h1>***
+
+***AGREGAR MÓDULO DE INSTALACIÓN DE DOCKER EN MENÚ DE ADMINISTRACIÓN PARA INSTALACIÓN Y PRUEBAS UNITARIAS***
+
+Menú 
+
+```bash
+"- ------------------------------------ -"        
+"-  Nombre del servidor: [$(hostname)]  -"        
+"- ------------------------------------ -"        
+"-        Menú de administración        -"        
+"- ------------------------------------ -"        
+"-  1. Cambiar nombre Servidor          -"        
+"- ------------------------------------ -"        
+"-  2. Cambiar Partición Discos         -"   	
+"- ------------------------------------ -"     
+"-  3. Cambiar IP Servidor              -"   	
+"- ------------------------------------ -"    
+"-  4. Cambiar tabla de Host            -"   	
+"- ------------------------------------ -"      
+"-  5. Agregar Permisos de Firewall     -"   	
+"- ------------------------------------ -"   
+"-  6. Editar DNS Server                -"   	
+"- ------------------------------------ -" 
+"-  7. Configurar proxy                 -"   	
+"- ------------------------------------ -"  
+"-  8. Instalar Docker                  -"   	
+"- ------------------------------------ -"      
+"-  E. Exit                             -"        
+"- ------------------------------------ -"  
+"Digite la opción [1-7] "
+```
+
+Código para la instalación y pruebas de Docker
+
+```bash
+"-----------------------------------------------------------------------------"
+ "Inicia instalacion docker CE                                                 "
+ "-----------------------------------------------------------------------------"
+read -p ">> Paso 1: Desea Instalar Docker (y/n)? " answer
+
+if [[ $answer =~ ^[Yy]$ ]]
+	then
+		cd ~/
+
+		 "-----------------------------------------------------------------------------"
+		 "Instalación Prerequisitios"
+		 "-----------------------------------------------------------------------------"
+		sudo apt-get update -y
+		sudo apt install apt-transport-https ca-certificates curl software-properties-common -y
+		curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+		sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable" -y
+		sudo apt update -y
+		apt-cache policy docker-ce -y
+		sudo apt install docker-ce -y
+
+		 "-----------------------------------------------------------------------------"
+		 "Verificar Version"
+		 "-----------------------------------------------------------------------------"
+		docker --version
+
+		 "-----------------------------------------------------------------------------"
+		 "Iniciar docker con el sistema"
+		 "-----------------------------------------------------------------------------"
+		sudo systemctl enable docker
+		sudo systemctl start docker
+		
+		 "-----------------------------------------------------------------------------"
+		 "Crear usuario de Docker"
+		 "-----------------------------------------------------------------------------"
+		sudo adduser docker
+
+		
+		 "-----------------------------------------------------------------------------"
+		 "Agregar permisos usuario ubunutu al grupo Docker"
+		 "-----------------------------------------------------------------------------"
+		user=$(whoami)
+		sudo usermod -G docker $user
+		grep $user /etc/group
+
+		 "-----------------------------------------------------------------------------"
+		 "folder docker"
+		 "-----------------------------------------------------------------------------"
+		folder=/Images
+		sudo mkdir -p $folder/$user
+		sudo mkdir -p $folder/$user/Data
+		sudo chown -R $user:$user $folder/$user
+		sudo chown -R $user:$user $folder/$user/Data
+		ls -ltr $folder/
+
+		read -p "Press [Enter] key to continue..." readEnterKey
+
+		 "-----------------------------------------------------------------------------"
+		 "Inicia instalacion Docker Compose                                            "
+		 "-----------------------------------------------------------------------------"
+
+		sudo mkdir -p /usr/local/bin
+		sudo curl -L "https://github.com/docker/compose/releases/download/1.26.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+
+		sudo chmod +x /usr/local/bin/docker-compose
+
+		 "-----------------------------------------------------------------------------"
+		 "Verificar docker-compose"
+		 "-----------------------------------------------------------------------------"
+		sudo docker-compose --version
+
+		read -p "Press [Enter] key to continue..." readEnterKey
+
+
+		 "-----------------------------------------------------------------------------"
+		 "Fin instalacion Docker                                                       "
+		 "-----------------------------------------------------------------------------"
+
+		read -p "Press [Enter] key to continue..." readEnterKey
+fi
+ "-----------------------------------------------------------------------------"
+ "Sin Ajustes!!"
+ "-----------------------------------------------------------------------------"
+	
+ ---------- Fin del Script ----------------------------
+read -p "Press [Enter] key to continue..." readEnterKey
+```

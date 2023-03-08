@@ -1,3 +1,32 @@
+***<h1 align="center">MENÚ</h1>***
+	
+```bash
+"- ------------------------------------ -"        
+"-  Nombre del servidor: [$(hostname)]  -"        
+"- ------------------------------------ -"        
+"-        Menú de administración        -"        
+"- ------------------------------------ -"        
+"-  1. Cambiar nombre Servidor          -"        
+"- ------------------------------------ -"        
+"-  2. Cambiar Partición Discos         -"   	
+"- ------------------------------------ -"     
+"-  3. Cambiar IP Servidor              -"   	
+"- ------------------------------------ -"    
+"-  4. Cambiar tabla de Host            -"   	
+"- ------------------------------------ -"      
+"-  5. Agregar Permisos de Firewall     -"   	
+"- ------------------------------------ -"   
+"-  6. Editar DNS Server                -"   	
+"- ------------------------------------ -" 
+"-  7. Configurar proxy                 -"   	
+"- ------------------------------------ -"  
+"-  8. Instalar Docker                  -"   	
+"- ------------------------------------ -"      
+"-  E. Exit                             -"        
+"- ------------------------------------ -"  
+"Digite la opción [1-7] "
+```
+
 ***<h1 align="center">TALLER 2 SISTEMAS OPERATIVOS</h1>***
 
 ***EXPLICACIÓN DE LA SHELL DE ADMINISTRACIÓN*** 

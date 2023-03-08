@@ -31,9 +31,7 @@
 
 ***EXPLICACIÓN DE LA SHELL DE ADMINISTRACIÓN*** 
 
-![menu](imagesMenu/menu.png)
-
-Se hace la creación del menú que permita al usuario elegir la opción que quiera cambiar, agregar, editar, configurar o salir.
+Se hace la creación del menú presentado anteriormente, que permita al usuario elegir la opción que quiera cambiar, agregar, editar, configurar o salir.
 
 ***OPCIÓN 1:***
 
@@ -209,33 +207,13 @@ Para la clonación del repositorio ejecutariamos el comando git clone URL-SSH. E
 Menú 
 
 ```bash
-"- ------------------------------------ -"        
-"-  Nombre del servidor: [$(hostname)]  -"        
-"- ------------------------------------ -"        
-"-        Menú de administración        -"        
-"- ------------------------------------ -"        
-"-  1. Cambiar nombre Servidor          -"        
-"- ------------------------------------ -"        
-"-  2. Cambiar Partición Discos         -"   	
-"- ------------------------------------ -"     
-"-  3. Cambiar IP Servidor              -"   	
-"- ------------------------------------ -"    
-"-  4. Cambiar tabla de Host            -"   	
-"- ------------------------------------ -"      
-"-  5. Agregar Permisos de Firewall     -"   	
-"- ------------------------------------ -"   
-"-  6. Editar DNS Server                -"   	
-"- ------------------------------------ -" 
-"-  7. Configurar proxy                 -"   	
+
 "- ------------------------------------ -"  
 "-  8. Instalar Docker                  -"   	
 "- ------------------------------------ -"      
-"-  E. Exit                             -"        
-"- ------------------------------------ -"  
-"Digite la opción [1-7] "
 ```
 
-Código para la instalación y pruebas de Docker
+Se agregó la opción 8 para la instalación de Docker de manera automatizaca. A continuación se presenta el código para la instalación y pruebas de Docker:
 
 ```bash
 "-----------------------------------------------------------------------------"

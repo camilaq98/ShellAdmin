@@ -31,7 +31,12 @@
 
 ***EXPLICACIÓN DE LA SHELL DE ADMINISTRACIÓN*** 
 
-Se hace la creación del menú presentado anteriormente, que permita al usuario elegir la opción que quiera cambiar, agregar, editar, configurar o salir.
+Se hace la creación del menú presentado anteriormente, que permita al usuario elegir la opción que quiera cambiar, agregar, editar, configurar o salir. Para la ejecución de la Shell, deberá clonar el repositorio, si está trabajando en una máquina Linux deberá darle permisos al script y correrla con el siguiente comando.
+
+```bash
+chmod +x ShellAdmin.sh >> dar permisos para la ejecución de la Shell
+./ShellAdmin.sh >> ejecución de la Shell
+```
 
 ***OPCIÓN 1:***
 

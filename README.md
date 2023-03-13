@@ -218,7 +218,7 @@ Menú
 "- ------------------------------------ -"      
 ```
 
-Se agregó la opción 8 para la instalación de Docker de manera automatizaca. A continuación se presenta el código para la instalación y pruebas de Docker:
+Se agregó la opción 8 para la instalación de Docker de manera automatizada. A continuación se presenta el código para la instalación y pruebas de Docker:
 
 ```bash
 "-----------------------------------------------------------------------------"
@@ -309,3 +309,69 @@ read -p "Press [Enter] key to continue..." readEnterKey
 ```
 
 ***CLONAR REPOSITORIO***
+
+Para hacer la clonación del repositorio se hará en la shell de bash directamente en el Viual Studio Code. Se copia la URL subrayada en amarillo desde el repositorio de GitHub así como se muestra a continuación:
+
+<p align="center">
+  <img src="imagesTaller2Docker/clonarRepo.png" width="500" height="250" title="Clonar un repositorio">
+</p> 
+
+Luego de copiar la URL en el visual se le antepone el comando git clone, como se muestra en la siguiente imagen:
+
+<p align="center">
+  <img src="imagesTaller2Docker/repoClonado.png" width="500" height="250" title="Repositorio clonado">
+</p> 
+
+***INSTALAR SHELL***
+
+Para realizar la instalación de la Shell primero se debe realizar la validación de la rama en la que nos encontramos actualmente en el repositorio, para este caso en la rama que estamos es la main así que debemos hacer el cambio de rama para estar en la sh-admin que es donde estamos subiendo todo lo necesario para realizar estos talleres, esto se hace de la siguiente manera:
+
+<p align="center">
+  <img src="imagesTaller2Docker/cambioRama.png" width="500" height="250" title="Cambio de rama de la main a la sh-admin">
+</p> 
+
+Como ya estamos ubicados en la rama necesaria copiamos el archivo .sh, luego en la consola si le damos un ls podremos ver que el archivo se encuentra dentro del repositorio.
+
+<p align="center">
+  <img src="imagesTaller2Docker/shellInstalada.png" width="500" height="250" title="Shell instalada">
+</p> 
+
+***SUBIR CAMBIOS A REPOSITORIO***
+
+Con el comando sh pushGit.sh "comment" "rama" se ejecuta la shell para automatización de comandos en GitHub como (clonar repositorio, configuraciones globales, estado, subir todos los cambios de la carpeta actual y agregar comentarios). A continuación se muestra la imagen de la ejecución de la shell para añadir dos archivos que son ShellAdmin.sh y pushGit.sh
+
+<p align="center">
+  <img src="imagesTaller2Docker/subirCambios.png" width="500" height="450" title="Ejecución shell automatizando comandos de GitHub">
+</p> 
+
+Subidos los cambios, en la máquina de AWS debemos hacer la actualización del repositorio de la siguiente manera:
+
+<p align="center">
+  <img src="imagesTaller2Docker/actualizacionRepoAWS.png" width="500" height="250" title="Actualizar repositorio en AWS">
+</p> 
+
+***PRUEBAS DE docker -version y docker-compose -version***
+
+Se deben dar permisos para poder ejecutar la shell y luego si el comando para su ejecución, así como se muestra a continuación:
+
+<p align="center">
+  <img src="imagesTaller2Docker/permisosEjecucion.png" width="500" height="250" title="Permisos para ejecución de la shell">
+</p> 
+
+De la siguiente manera verá la ejecución de la shell:
+
+<p align="center">
+  <img src="imagesTaller2Docker/ejecutandoScript.png" width="500" height="250" title="Ejecución de la shell">
+</p> 
+
+Se da la opción 8 del menú e inicia con la instalación de docker, aquí se podrá evidencia la version del docker.
+
+<p align="center">
+  <img src="imagesTaller2Docker/instalarVersionDocker.png" width="600" height="350" title="Intalar docker y ver la versión">
+</p> 
+
+Además se podrá ver la versión del docker-compose
+
+<p align="center">
+  <img src="imagesTaller2Docker/instalarVersionDockerCompose.png" width="600" height="350" title="Intalar docker-compose y ver la versión">
+</p> 
